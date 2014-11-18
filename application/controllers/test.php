@@ -25,6 +25,11 @@ class test extends CI_Controller{
         foreach ($this->collection->getItems() as $value)
             echo($value."<br>");
 
+        //$this->session->set_userdata('utilisateur', $user);
+
+        //$aUser= $this->session->userdata('utilisateur');
+        //echo($aUser->getNom());
+
     }
 
 
