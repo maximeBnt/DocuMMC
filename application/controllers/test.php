@@ -9,6 +9,11 @@
 class test extends CI_Controller{
     public function index(){
         echo "it works";
+        $this->load->helper('url');
+        echo "</br>";
+        echo (site_url('test', 'page'));
+        echo "</br>";
+        echo(css_url('style'));
     }
 
     public function accueil(){
