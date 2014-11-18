@@ -8,4 +8,4 @@
 
 //echo $data['nom'];
 
-echo $data;
+echo $nom;
