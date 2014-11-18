@@ -24,4 +24,13 @@ class test extends CI_Controller{
     }
 
 
+    public function testCollection(){
+        $this->collection->add("1 chaîne");
+        $this->collection->add("2 chaînes");
+        foreach ($this->collection->getItems() as $value)
+            echo($value."<br>");
+
+    }
+
+
 } 
