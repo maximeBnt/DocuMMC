@@ -357,6 +357,9 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+$config['javascript_location'] = 'http://127.0.0.1/DocuMMC/assets/js/jquery-2.0.3.js';
+$config['javascript_ajax_img'] = 'assets/images/ajax-loader.gif';
+
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
