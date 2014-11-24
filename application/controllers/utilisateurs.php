@@ -37,4 +37,4 @@ class Utilisateurs extends CI_Controller{
         $this->load->view('v_utilisateurs',array('utilisateurs'=>$users));
     }
 
-} 
+}
