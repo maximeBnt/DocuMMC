@@ -110,7 +110,7 @@ class Version
      * @param \Utilisateur $idauteur
      * @return Version
      */
-    public function setIdauteur(\Utilisateur $idauteur = null)
+    public function setIdauteur(\CUtilisateur $idauteur = null)
     {
         $this->idauteur = $idauteur;
     

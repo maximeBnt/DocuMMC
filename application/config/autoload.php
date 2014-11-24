@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('utilisateur');
+$autoload['model'] = array('Utilisateur','groupe','monde');
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

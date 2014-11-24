@@ -6,7 +6,7 @@
  * Time: 09:14
  */
 
-class Utilisateurs extends CI_Controller{
+class CUtilisateur extends CI_Controller{
 
     public function add(){
         $this->load->helper(array('form', 'url'));
@@ -25,7 +25,7 @@ class Utilisateurs extends CI_Controller{
     }
 
     public function submit_add($name){
-        $user = new Utilisateur();
+        $user = new CUtilisateur();
         $user->setNom($name);
         $this->doctrine->em->persist($user);
         $this->doctrine->em->flush();

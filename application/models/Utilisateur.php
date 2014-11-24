@@ -7,61 +7,61 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Utilisateur
  *
- * @ORM\Table(name="utilisateur")
- * @ORM\Entity
+ * @Table(name="utilisateur")
+ * @Entity
  */
 class Utilisateur
 {
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @Column(name="id", type="integer", nullable=false)
+     * @Id
+     * @GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="login", type="string", length=30, nullable=true)
+     * @Column(name="login", type="string", length=30, nullable=true)
      */
     private $login;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=15, nullable=true)
+     * @Column(name="password", type="string", length=15, nullable=true)
      */
     private $password;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=30, nullable=true)
+     * @Column(name="nom", type="string", length=30, nullable=true)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="prenom", type="string", length=30, nullable=true)
+     * @Column(name="prenom", type="string", length=30, nullable=true)
      */
     private $prenom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mail", type="string", length=255, nullable=true)
+     * @Column(name="mail", type="string", length=255, nullable=true)
      */
     private $mail;
 
     /**
      * @var \Groupe
      *
-     * @ORM\ManyToOne(targetEntity="Groupe")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idGroupe", referencedColumnName="id")
+     * @ManyToOne(targetEntity="Groupe")
+     * @JoinColumns({
+     *   @JoinColumn(name="idGroupe", referencedColumnName="id")
      * })
      */
     private $idgroupe;
@@ -69,9 +69,9 @@ class Utilisateur
     /**
      * @var \Monde
      *
-     * @ORM\ManyToOne(targetEntity="Monde")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idMonde", referencedColumnName="id")
+     * @ManyToOne(targetEntity="Monde")
+     * @JoinColumns({
+     *   @JoinColumn(name="idMonde", referencedColumnName="id")
      * })
      */
     private $idmonde;
