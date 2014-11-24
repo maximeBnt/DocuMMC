@@ -6,7 +6,8 @@
  * Time: 09:16
  */
 
-foreach ($utilisateurs as $user){
+foreach ($Utilisateur as $user){
     echo($user->getNom()." <br>");
+    echo($user->getPrenom()." <br>");
 }
 ?>

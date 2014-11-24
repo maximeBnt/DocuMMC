@@ -16,7 +16,7 @@ class CUtilisateur extends CI_Controller{
         $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]|xss_clean');
         if ($this->form_validation->run() == FALSE)
         {
-            $this->load->view('v_utilisateur_add');
+            $this->load->view('v_utilisateur _add');
         }
         else
         {
@@ -34,7 +34,7 @@ class CUtilisateur extends CI_Controller{
     public function all(){
         $query = $this->doctrine->em->createQuery("SELECT u FROM Utilisateur u");
         $users = $query->getResult();
-        $this->load->view('v_utilisateurs',array('utilisateurs'=>$users));
+        $this->load->view('v_utilisateurs',array('Utilisateur'=>$users));
     }
 
 }
