@@ -34,7 +34,11 @@ class CI_JqueryUtils extends CI_JsUtils {
 	var $jquery_table_sorter_pager_active = FALSE;
 	var $jquery_ajax_img = '';
 
-	public function __construct($params)
+    /**
+     * @param array $params
+     * @param $autoload
+     */
+    public function __construct($params, $autoload)
 	{
 		$this->CI =& get_instance();
 		extract($params);
