@@ -9,5 +9,4 @@
 foreach ($Utilisateur as $user){
     echo($user->getNom()." <br>");
     echo($user->getPrenom()." <br>");
-}
-?>
+}?>
