@@ -35,6 +35,7 @@ class CUtilisateur extends CI_Controller{
         $query = $this->doctrine->em->createQuery("SELECT u FROM Utilisateur u");
         $users = $query->getResult();
         $this->load->view('v_utilisateurs',array('Utilisateur'=>$users));
+        echo 'zizi';
     }
 
 }
